@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{  
+  position: relative;
+    height: 60vh;
+    align-items: center;
+}
+
+
+
+.words{ width:90%;
+    position: absolute;
+   transform: translate(-50%,-50%);
+   top: 60%;
+   left:50%;
+   text-align: center;
+
+}
+.words span{
+ display: inline-block;
+ font-family:sans-serif;
+ font-size: 12vw;
+ font-weight: 700;
+ color: white;
+ letter-spacing: 0.5vw;
+ text-shadow: 0 15px 25px rgba(0,0,0,0.2 );
+ position: relative;
+ transform: translateY(-100vh);
+ animation: fall 0.8s forwards ; 
+ /* delay iteration-count direction fill-mode; */
+
+}
+.container span:nth-child(2){
+    animation-delay: 0.3s;
+}
+.container span:nth-child(3){
+    animation-delay: 0.6s;
+}
+.container span:nth-child(4){
+    animation-delay: 0.9s;
+}
+.container span:nth-child(5){
+    animation-delay: 1.2s;
+}
+.container span:nth-child(6){
+    animation-delay: 1.5s;
+}
+.container span:nth-child(7){
+    animation-delay: 1.8s;
+}
+.container span:nth-child(8){
+    animation-delay: 2.1s;
+}
+.container span:nth-child(9){
+    animation-delay: 2.4s;
+}
+.container span:nth-child(10){
+    animation-delay: 2.7s;
+}
+
+
+@keyframes fall {
+    100%{
+        transform: translateY(0);
+    }
+    
+}
